@@ -1,30 +1,30 @@
 [gd_scene load_steps=10 format=3 uid="uid://dxamsbhydvro3"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_ckwet"]
-[ext_resource type="Texture2D" uid="uid://ppv02i6aob6b" path="res://art/sprite sheet/robot idle.png" id="1_crqho"]
-[ext_resource type="Texture2D" uid="uid://dcgrwfy1d0wow" path="res://art/sprite sheet/robot walk-Sheet.png" id="3_7h5xb"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_3rv84"]
+[ext_resource type="Texture2D" uid="uid://ppv02i6aob6b" path="res://art/sprite sheet/robot idle.png" id="2_l0se4"]
+[ext_resource type="Texture2D" uid="uid://dcgrwfy1d0wow" path="res://art/sprite sheet/robot walk-Sheet.png" id="3_1noll"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i2ggf"]
-atlas = ExtResource("3_7h5xb")
+atlas = ExtResource("3_1noll")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_trsnw"]
-atlas = ExtResource("3_7h5xb")
+atlas = ExtResource("3_1noll")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vylj5"]
-atlas = ExtResource("3_7h5xb")
+atlas = ExtResource("3_1noll")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lufni"]
-atlas = ExtResource("3_7h5xb")
+atlas = ExtResource("3_1noll")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6jex3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_crqho")
+"texture": ExtResource("2_l0se4")
 }],
 "loop": true,
 "name": &"idle",
@@ -53,7 +53,7 @@ size = Vector2(7, 15)
 
 [node name="Player" type="Area2D"]
 texture_filter = 1
-script = ExtResource("1_ckwet")
+script = ExtResource("1_3rv84")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
