@@ -1,0 +1,23 @@
+
+                                                       - READ ME -  
+
+Thank you for using factory_!
+
+Stuff to know - Tilesets
+
+- Each tile is 16x16 pixels...although some objects/structures are 16x32/32x16/32x32...[e.g. scafolding, conveyor belt]
+- Each tileset has a 1 tile [16x16 pixels] border
+
+Stuff to know - Animations
+
+- Spring animation is 6 frames
+- Conveyor belt animation is 4 frames
+
+
+If you have any questions or requests you can contact me at analogstudios.inc@gmail.com
+
+
+
+
+
+                                                             
