@@ -6,10 +6,11 @@ class_name InteractionArea
 var interact: Callable = func():
 	pass
 
-
 func _on_body_entered(body):
 	InteractionManager.register_area(self)
+	print("entered")
 
 
 func _on_body_exited(body):
 	InteractionManager.unregister_area(self)
+	print("exited")

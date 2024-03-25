@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dnq7hw323v45x"]
+[gd_scene load_steps=7 format=3 uid="uid://dqh2ntrne52r1"]
 
 [ext_resource type="Script" path="res://Scenes/ElectricBox.gd" id="1_e7f66"]
 [ext_resource type="Texture2D" uid="uid://djsv8nc4gughx" path="res://art/clickable.png" id="2_su5q3"]
@@ -11,6 +11,7 @@ region = Rect2(45, 0, 19, 18)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lt3t5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o0m1d"]
+size = Vector2(89, 67.5)
 
 [node name="ElectricBox" type="Area2D"]
 script = ExtResource("1_e7f66")
@@ -25,4 +26,7 @@ shape = SubResource("RectangleShape2D_lt3t5")
 script = ExtResource("3_614ya")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(3.5, 22.25)
 shape = SubResource("RectangleShape2D_o0m1d")
+
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
