@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://d2oel5hhsqjxa"]
+[gd_scene load_steps=5 format=3 uid="uid://d2oel5hhsqjxa"]
 
+[ext_resource type="Texture2D" uid="uid://chlsw2oiyr7ch" path="res://art/sprite sheet/popup-ui.png" id="1_cnok5"]
 [ext_resource type="FontFile" uid="uid://bxu3l738ou8e5" path="res://fonts/04B_30__.TTF" id="1_nli2x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iwfo4"]
@@ -36,6 +37,11 @@ Button/styles/pressed = null
 offset_right = 320.0
 offset_bottom = 180.0
 color = Color(1, 0.92549, 0.839216, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+texture = ExtResource("1_cnok5")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 78.0
