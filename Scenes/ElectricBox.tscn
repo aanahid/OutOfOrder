@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://dnq7hw323v45x"]
+
+[ext_resource type="Script" path="res://Scenes/ElectricBox.gd" id="1_e7f66"]
+[ext_resource type="Texture2D" uid="uid://djsv8nc4gughx" path="res://art/clickable.png" id="2_su5q3"]
+[ext_resource type="Script" path="res://interaction/interaction area/interaction_area.gd" id="3_614ya"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pd7aa"]
+atlas = ExtResource("2_su5q3")
+region = Rect2(45, 0, 19, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lt3t5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o0m1d"]
+
+[node name="ElectricBox" type="Area2D"]
+script = ExtResource("1_e7f66")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_pd7aa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lt3t5")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+script = ExtResource("3_614ya")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("RectangleShape2D_o0m1d")

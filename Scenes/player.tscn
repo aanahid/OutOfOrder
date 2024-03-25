@@ -51,8 +51,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r6a1v"]
 size = Vector2(7, 15)
 
-[node name="Player" type="Area2D"]
+[node name="Player" type="Area2D" groups=["player"]]
 texture_filter = 1
+collision_layer = 2
 script = ExtResource("1_3rv84")
 metadata/_edit_group_ = true
 
