@@ -15,6 +15,7 @@ func _ready():
 func _process(delta):
 	move_player(delta)
 
+@warning_ignore("unused_parameter")
 func move_player(delta):
 	# Handle input and calculate velocity
 	velocity = Vector2()

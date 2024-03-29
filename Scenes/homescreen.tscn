@@ -1,6 +1,5 @@
 [gd_scene load_steps=6 format=3 uid="uid://d2oel5hhsqjxa"]
 
-[ext_resource type="Texture2D" uid="uid://chlsw2oiyr7ch" path="res://art/sprite sheet/popup-ui.png" id="1_cnok5"]
 [ext_resource type="FontFile" uid="uid://bxu3l738ou8e5" path="res://fonts/04B_30__.TTF" id="1_nli2x"]
 [ext_resource type="Texture2D" uid="uid://o0w2vmlsdqm0" path="res://art/overlay.png" id="2_k8mr8"]
 [ext_resource type="Texture2D" uid="uid://5oyfggppm05n" path="res://art/low-battery-home.png" id="3_slncp"]

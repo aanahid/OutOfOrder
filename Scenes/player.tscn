@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dxamsbhydvro3"]
+[gd_scene load_steps=13 format=3 uid="uid://dxamsbhydvro3"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_3rv84"]
 [ext_resource type="Texture2D" uid="uid://ppv02i6aob6b" path="res://art/sprite sheet/robot idle.png" id="2_l0se4"]
 [ext_resource type="Texture2D" uid="uid://dcgrwfy1d0wow" path="res://art/sprite sheet/robot walk-Sheet.png" id="3_1noll"]
+[ext_resource type="Script" path="res://scripts/InteractArea2D.gd" id="4_nqjs0"]
+[ext_resource type="PackedScene" uid="uid://elmevri3nrtl" path="res://Scenes/InteractIndicator.tscn" id="5_g8sug"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i2ggf"]
 atlas = ExtResource("3_1noll")
@@ -51,6 +53,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r6a1v"]
 size = Vector2(7, 15)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uhvr3"]
+radius = 8.0
+height = 24.0
+
 [node name="Player" type="Area2D" groups=["player"]]
 texture_filter = 1
 collision_layer = 2
@@ -65,3 +71,11 @@ animation = &"idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_r6a1v")
+
+[node name="InteractArea2D" type="Area2D" parent="."]
+script = ExtResource("4_nqjs0")
+indicator_scene = ExtResource("5_g8sug")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea2D"]
+position = Vector2(0, -2)
+shape = SubResource("CapsuleShape2D_uhvr3")

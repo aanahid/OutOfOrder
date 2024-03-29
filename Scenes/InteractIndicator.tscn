@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://elmevri3nrtl"]
+
+[ext_resource type="FontFile" uid="uid://bxu3l738ou8e5" path="res://fonts/04B_30__.TTF" id="1_mgf7q"]
+
+[node name="InteractIndicator" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -39.0
+offset_top = -4.0
+offset_right = 39.0
+offset_bottom = 4.0
+theme_override_colors/font_color = Color(0.819608, 0.74902, 0.670588, 1)
+theme_override_colors/font_outline_color = Color(0.145098, 0.129412, 0.243137, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("1_mgf7q")
+theme_override_font_sizes/font_size = 5
+text = "Press E to interact"

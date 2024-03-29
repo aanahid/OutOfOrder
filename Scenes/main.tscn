@@ -1,17 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://bgxulxafigdk3"]
+[gd_scene load_steps=8 format=3 uid="uid://bgxulxafigdk3"]
 
-[ext_resource type="Texture2D" uid="uid://b6xay0w2f81vk" path="res://art/sprite sheet/cable-management.png" id="1_112gb"]
-[ext_resource type="Texture2D" uid="uid://b8hvr8tx8q857" path="res://art/Free verBase 1 Hex Buttons & Text 1.png" id="2_ymnmy"]
 [ext_resource type="Texture2D" uid="uid://c88vype62eelk" path="res://art/factory_ [version 1.0]/factory_.png" id="3_eih83"]
 [ext_resource type="Texture2D" uid="uid://djsv8nc4gughx" path="res://art/clickable.png" id="3_wsc0c"]
 [ext_resource type="PackedScene" uid="uid://dxamsbhydvro3" path="res://Scenes/player.tscn" id="5_qye5q"]
 [ext_resource type="PackedScene" uid="uid://dqh2ntrne52r1" path="res://Scenes/ElectricBox.tscn" id="6_60m8y"]
-
-[sub_resource type="Theme" id="Theme_svmkh"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_euxkv"]
-atlas = ExtResource("2_ymnmy")
-region = Rect2(34, 258, 12, 12)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g1mjp"]
 texture = ExtResource("3_wsc0c")
@@ -1009,45 +1001,6 @@ sources/1 = SubResource("TileSetAtlasSource_kypno")
 sources/0 = SubResource("TileSetAtlasSource_g1mjp")
 
 [node name="Node2D" type="Node2D"]
-
-[node name="wirePuzzle" type="CanvasLayer" parent="."]
-visible = false
-
-[node name="ColorRect" type="ColorRect" parent="wirePuzzle"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -110.5
-offset_top = -86.0
-offset_right = 110.5
-offset_bottom = 86.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_svmkh")
-color = Color(0.478431, 0.290196, 0.352941, 1)
-
-[node name="TextureRect" type="TextureRect" parent="wirePuzzle"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -190.0
-offset_top = -107.0
-offset_right = 190.0
-offset_bottom = 107.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_112gb")
-
-[node name="CloseButton" type="TextureButton" parent="wirePuzzle"]
-offset_left = 257.0
-offset_top = 5.0
-offset_right = 269.0
-offset_bottom = 18.0
-texture_normal = SubResource("AtlasTexture_euxkv")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_0j3qo")
