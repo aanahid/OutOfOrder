@@ -13,7 +13,7 @@ var selected_interactable : Interactable :
 		selected_interactable = value
 		
 		if (selected_interactable == null):
-			interacation_indicator.queue_free()
+			interacation_indicator.free()
 			return
 		
 		_add_indicator_to_interactable(selected_interactable)

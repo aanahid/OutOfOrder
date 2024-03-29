@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/ElectricBox.gd" id="1_e7f66"]
 [ext_resource type="Texture2D" uid="uid://djsv8nc4gughx" path="res://art/clickable.png" id="2_su5q3"]
-[ext_resource type="Script" path="res://Scenes/wirePuzzle.gd" id="3_58yjk"]
+[ext_resource type="Script" path="res://scripts/wirePuzzle.gd" id="3_58yjk"]
 [ext_resource type="Texture2D" uid="uid://b6xay0w2f81vk" path="res://art/sprite sheet/cable-management.png" id="3_gha2k"]
 [ext_resource type="Texture2D" uid="uid://b8hvr8tx8q857" path="res://art/Free verBase 1 Hex Buttons & Text 1.png" id="4_suptt"]
 
